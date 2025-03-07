@@ -10,10 +10,10 @@ jobs:
     compile-and-deploy-frontend:
       runs-on: ubuntu-latest
       steps:
-        - uses: actions/checkout@v3
-        - uses: actions/setup-node@v3
+        - uses: actions/checkout@v4
+        - uses: actions/setup-node@v4
           with:
-            node-version: '18'
+            node-version: '22'
         - run: npm ci
         - run: echo "VITE_DEPLOYMENT_ID=${{ github.run_id }}${{ github.run_attempt }}" >> .env
         - if: github.event.inputs.deployment_environment == 'prod'
@@ -45,18 +45,18 @@ jobs:
     deploy-lambda-function:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v3
-            - name: Setup Python 3.11
-              uses: actions/setup-python@v1
+            - uses: actions/checkout@v4
+            - name: Setup Python 3.13
+              uses: actions/setup-python@v5
               with:
-                python-version: 3.11
+                python-version: 3.13
             - name: Bundle payload with function
               run: |
                 cp ./src/assets/payload.xlsx ./server/payload.xlsx
                 rm ./server/requirements.txt
                 zip -j --quiet -r lambda.zip server
             - name: Create artifact
-              uses: actions/upload-artifact@v3
+              uses: actions/upload-artifact@v4
               with:
                 name: lambda
                 path: lambda.zip
