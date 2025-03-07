@@ -1,5 +1,5 @@
 <template>
-    <div role="alert" class=" p-4  rounded font-semibold prose max-w-none" v-html="error ? error : message" :class="{
+    <div role="alert" class=" p-4  rounded-sm font-semibold prose max-w-none" v-html="error ? error : message" :class="{
         'bg-red-100 text-red-800': error, 'bg-orange-100 text-orange-800': !error
     }">
     </div>

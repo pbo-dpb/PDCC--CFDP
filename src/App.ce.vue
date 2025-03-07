@@ -17,7 +17,8 @@
         <ErrorBlock v-if="workbookStore.isBeingMaintained"></ErrorBlock>
         <main v-if="!workbookStore.loading && !workbookStore.error && !workbookStore.isBeingMaintained">
 
-            <FlexibleRow class="hidden md:grid sticky top-0 bg-white dark:bg-gray-900 border-b border-gray-300"
+            <FlexibleRow
+                class="hidden md:grid sticky top-0 bg-white dark:bg-gray-900 border-b border-solid border-gray-300"
                 aria-hidden="true">
                 <template #title>
 
@@ -32,7 +33,7 @@
             <!-- 
             Inputs
         -->
-            <section class="flex flex-col divide-y divide-blue-100 dark:divide-blue-800 ">
+            <section class="flex flex-col divide-y divide-solid divide-blue-100 dark:divide-blue-800 ">
 
 
                 <FlexibleRow :editable="true" v-for="input in workbookStore.inputs">

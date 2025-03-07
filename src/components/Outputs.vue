@@ -1,10 +1,10 @@
 <template>
     <div class="flex flex-col gap-4 mt-4 transition-all" :inert="shouldHide"
-        :class="{ blur: shouldHide, 'opacity-60 grayscale': workbookStore.areCurrentUserInputsDifferentFromProcessed }"
+        :class="{ 'blur-sm': shouldHide, 'opacity-60 grayscale': workbookStore.areCurrentUserInputsDifferentFromProcessed }"
         aria-live="assertive">
         <!-- General Outputs -->
 
-        <section class="flex flex-col divide-y divide-gray-300 ">
+        <section class="flex flex-col divide-y divide-solid divide-gray-300 ">
 
             <h3 class="p-2 -mx-2 text-xl font-light">{{ strings.ouputsTitle }}</h3>
 
