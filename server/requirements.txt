@@ -1,8 +1,8 @@
-schedula>=1.4.1
-numpy>=1.15
+schedula>=1.5.55
+numpy>=2
 dictdiffer
-openpyxl==3.1.2
-formulas==1.2.7
+openpyxl==3.1.5
+formulas==1.2.8
 regex
 python-dateutil
 numpy-financial
