@@ -10,8 +10,8 @@ jobs:
     compile-and-deploy-frontend:
       runs-on: ubuntu-latest
       steps:
-        - uses: actions/checkout@v4
-        - uses: actions/setup-node@v4
+        - uses: actions/checkout@v5
+        - uses: actions/setup-node@v5
           with:
             node-version: '22'
         - run: npm ci
@@ -45,7 +45,7 @@ jobs:
     deploy-lambda-function:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v4
+            - uses: actions/checkout@v5
             - name: Setup Python 3.11
               uses: actions/setup-python@v5
               with:
