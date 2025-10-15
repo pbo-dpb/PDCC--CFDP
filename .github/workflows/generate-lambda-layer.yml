@@ -15,7 +15,7 @@ jobs:
                 pip install --platform manylinux2014_aarch64 --target=python --implementation cp --python-version 3.13 --only-binary=:all: --upgrade -r server/requirements.txt
                 zip --quiet -r python.zip python
             - name: Create artifact
-              uses: actions/upload-artifact@v3
+              uses: actions/upload-artifact@v4
               with:
                 name: python
                 path: python.zip
