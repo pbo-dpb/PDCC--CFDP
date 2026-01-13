@@ -12,17 +12,17 @@
     "@heroicons/vue": "^2.2.0",
     "collect.js": "^4.36.1",
     "lodash.uniqueid": "^4.0.1",
-    "marked": "^16.4.0",
-    "pinia": "^3.0.3",
-    "vue": "^3.5.22",
+    "marked": "^17.0.1",
+    "pinia": "^3.0.4",
+    "vue": "^3.5.26",
     "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.14",
+    "@tailwindcss/postcss": "^4.1.18",
     "@tailwindcss/typography": "^0.5.19",
-    "@vitejs/plugin-vue": "^6.0.1",
+    "@vitejs/plugin-vue": "^6.0.3",
     "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.14",
-    "vite": "^7.1.11"
+    "tailwindcss": "^4.1.18",
+    "vite": "^7.3.1"
   }
 }
