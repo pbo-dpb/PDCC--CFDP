@@ -15,16 +15,19 @@ The tool has been updated to reflect the new interest rate projections from our 
 ## Frontend setup
 
 ### Project setup
+
 ```
 npm install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
 npm run dev
 ```
 
 ### Compiles and minifies for production
+
 ```
 npm run build
 ```

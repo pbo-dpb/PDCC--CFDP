@@ -1,28 +1,30 @@
 {
-  "name": "pbotool-ce-sample",
-  "private": true,
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite --host --port 8080",
-    "build": "vite build",
-    "stage": "vite build && zip -qq -r dist.zip dist",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@heroicons/vue": "^2.2.0",
-    "collect.js": "^4.36.1",
-    "lodash.uniqueid": "^4.0.1",
-    "marked": "^17.0.1",
-    "pinia": "^3.0.4",
-    "vue": "^3.5.26",
-    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz"
-  },
-  "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.18",
-    "@tailwindcss/typography": "^0.5.19",
-    "@vitejs/plugin-vue": "^6.0.3",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.18",
-    "vite": "^7.3.1"
-  }
+    "name": "pbotool-ce-sample",
+    "private": true,
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "vite --host --port 8080",
+        "build": "vite build",
+        "stage": "vite build && zip -qq -r dist.zip dist",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@heroicons/vue": "^2.2.0",
+        "collect.js": "^4.36.1",
+        "lodash.uniqueid": "^4.0.1",
+        "marked": "^17.0.1",
+        "pinia": "^3.0.4",
+        "vue": "^3.5.26",
+        "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz"
+    },
+    "devDependencies": {
+        "@tailwindcss/postcss": "^4.1.18",
+        "@tailwindcss/typography": "^0.5.19",
+        "@vitejs/plugin-vue": "^6.0.3",
+        "postcss": "^8.5.6",
+        "prettier": "^3.9.4",
+        "prettier-plugin-tailwindcss": "^0.8.0",
+        "tailwindcss": "^4.1.18",
+        "vite": "^7.3.1"
+    }
 }

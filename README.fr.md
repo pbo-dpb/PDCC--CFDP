@@ -15,20 +15,22 @@ L'outil a été mis à jour afin de tenir compte des nouvelles projections des t
 ## Configuration du côté client
 
 ### Installation du projet
+
 ```
 npm install
 ```
 
 ### Compilations et recharges à chaud pour le développement
+
 ```
 npm run dev
 ```
 
 ### Compilation et miniaturisation pour la production
+
 ```
 npm run build
 ```
-
 
 ## Configuration du côté serveur
 
