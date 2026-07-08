@@ -4,4 +4,4 @@ To use the tool, simply enter the revenue and expense amounts that are expected 
 
 For example, if a measure is proposed and its cost is financed by public debt, then interest charges will be added to the total cost of that measure. Similarly, if a measure is proposed and generates new revenues, then these revenues will reduce the public debt and thus reduce the interest costs paid on it.
 
-The tool has been updated to reflect our latest interest rate projections.
+The tool is regularly updated to reflect the interest rate projections and debt issuance assumptions from the latest Economic and Fiscal Outlook.

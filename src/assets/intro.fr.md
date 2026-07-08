@@ -4,4 +4,4 @@ Afin d'utiliser l'outil, il suffit de saisir les montants des recettes et des d�
 
 Par exemple, si une mesure est proposée et son coût est financé par la dette publique, alors des frais d'intérêt s'ajouteront au coût total de ladite mesure. De même, si une mesure est proposée et permet d'engranger de nouveaux revenus, alors ceux-ci permettront de réduire la dette publique et ainsi de réduire les frais d'intérêt payés sur celle-ci.
 
-L'outil a été mis à jour pour refléter nos dernières projections de taux d'intérêt.
+L’outil est régulièrement mis à jour pour tenir compte des projections de taux d’intérêt et des hypothèses relatives aux émissions de dette présentées dans les plus récentes Perspectives économiques et financières.
