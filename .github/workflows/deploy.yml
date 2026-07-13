@@ -10,10 +10,10 @@ jobs:
     compile-and-deploy-frontend:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v5
-            - uses: actions/setup-node@v5
+            - uses: actions/checkout@v7
+            - uses: actions/setup-node@v6
               with:
-                  node-version: "22"
+                  node-version: "24"
             - run: npm ci
             - run: echo "VITE_DEPLOYMENT_ID=${{ github.run_id }}${{ github.run_attempt }}" >> .env
             - if: github.event.inputs.deployment_environment == 'prod'
@@ -45,7 +45,7 @@ jobs:
     deploy-lambda-function:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v5
+            - uses: actions/checkout@v7
             - name: Setup Python 3.13
               uses: actions/setup-python@v6
               with:
@@ -70,7 +70,7 @@ jobs:
                   function_name: ${{ secrets.AWS_LAMBDA_FUNCTION_NAME_PROD }}
                   zip_file: lambda.zip
                   environment: deploymentid=${{ github.run_id }}${{ github.run_attempt }}
-            - name: Deploy to Lambda Devlopment
+            - name: Deploy to Lambda Development
               if: github.event.inputs.deployment_environment != 'prod'
               uses: appleboy/lambda-action@master
               with:
