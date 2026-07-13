@@ -70,7 +70,7 @@ jobs:
                   function_name: ${{ secrets.AWS_LAMBDA_FUNCTION_NAME_PROD }}
                   zip_file: lambda.zip
                   environment: deploymentid=${{ github.run_id }}${{ github.run_attempt }}
-            - name: Deploy to Lambda Devlopment
+            - name: Deploy to Lambda Development
               if: github.event.inputs.deployment_environment != 'prod'
               uses: appleboy/lambda-action@master
               with:
